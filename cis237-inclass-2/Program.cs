@@ -21,6 +21,8 @@ namespace cis237_inclass_2
             else
             {
                 // Do tower of Hanoi
+                TowerOfHanoi hanoi = new TowerOfHanoi();
+                hanoi.Solve();
             }    
         }
     }
