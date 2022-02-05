@@ -6,7 +6,22 @@ namespace cis237_inclass_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter 1 for Factorial or 2 for Tower of Hanoi");
+
+            string userInput = Console.ReadLine();
+
+            if (userInput == "1")
+            {
+                Factorial factorial = new Factorial();
+
+                Console.WriteLine("Solve 5");
+                Console.WriteLine("The answer is:");
+                Console.WriteLine(factorial.Solve(5));
+            }
+            else
+            {
+                // Do tower of Hanoi
+            }    
         }
     }
 }
